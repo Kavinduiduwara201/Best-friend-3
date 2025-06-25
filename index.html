@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>BEST FRIEND CHECKER..</title>
+  <title>BEST FRIEND CHECKER</title>
   <style>
     body {
       margin: 0;
@@ -80,6 +80,12 @@
       font-size: 12px;
       color: black;
     }
+    .credits-link {
+      position: absolute;
+      bottom: 20px;
+      font-size: 12px;
+      color: black;
+    }
   </style>
 </head>
 <body>
@@ -94,6 +100,7 @@
   </div>
   <div class="stars" id="starsContainer"></div>
   <p class="developer">Developed by Kavindu Iduwara</p>
+  <a href="credits.html" class="credits-link">Credits</a>
   <script>
     function checkFriendship() {
       const name1 = document.getElementById("name1").value.trim();
@@ -118,11 +125,4 @@
       const starsContainer = document.getElementById("starsContainer");
       const star = document.createElement("div");
       star.classList.add("star");
-      star.style.left = `${Math.random() * 100}%`;
-      star.style.top = `${Math.random() * 100}%`;
-      starsContainer.appendChild(star);
-      setTimeout(() => star.remove(), 2000);
-    }
-    setInterval(createStar, 100);
-  </script>
-
+      star.style.left = `${Math
