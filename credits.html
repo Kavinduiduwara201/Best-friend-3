@@ -8,11 +8,42 @@
     body {
       font-family: Arial, sans-serif;
       text-align: center;
+      background-color: #f0f0f0;
+    }
+    .credits {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      animation: fadeIn 2s;
+    }
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+    .developer {
+      font-size: 24px;
+      font-weight: bold;
+      animation: slideIn 2s;
+    }
+    @keyframes slideIn {
+      0% {
+        transform: translateX(-100%);
+      }
+      100% {
+        transform: translateX(0);
+      }
     }
   </style>
 </head>
 <body>
-  <h1>Credits</h1>
-  <p>Developed by Kavindu Iduwara</p>
+  <div class="credits">
+    <h1>Credits</h1>
+    <p class="developer">Developed by Kavindu Iduwara</p>
+  </div>
 </body>
 </html>
